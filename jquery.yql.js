@@ -54,7 +54,7 @@
 
                  var doAsynchronously = successCallback != null;
                  var yqlJson = {
-                     url: "http://query.yahooapis.com/v1/public/yql",
+                     url: window.location.protocol + "//query.yahooapis.com/v1/public/yql",
                      dataType: "jsonp",
                      success: successCallback,
                      async: doAsynchronously,
